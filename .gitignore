@@ -1,0 +1,8 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+# 数据文件 (太大不适合git管理)
+*.rar
+*.zip
+CircuitNet6.rar
+Lay-Net.rar
