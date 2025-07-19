@@ -17,22 +17,12 @@ def build_model(opt):
         ],
         "GPDL": ["in_channels", "out_channels"],
         "RouteNet": ["in_channels", "out_channels"],
-        "MAVI": ["in_channels", "out_channels"],
+        
         # "HybridModel": ["in_channels", "out_channels"],  # 注释掉不存在的模型
         "GCNCongestion": ["in_channels", "out_channels", "hidden_channels", "dropout"],
         "CGANCongestion": ["in_channels", "out_channels", "noise_dim"],
-        "CVAECongestion": [
-            "in_channels",
-            "out_channels",
-            "latent_dim",
-            "kld_weight",
-            "use_mmd",
-            "mmd_weight",
-            "use_feature_matching",
-            "feature_matching_weight",
-        ],
+
         "FCNCongestion": ["in_channels", "out_channels"],
-        "LHNNCongestion": ["in_channels", "out_channels"],
         "GraphSAGECongestion": ["in_channels", "out_channels", "hidden_channels", "dropout"],
         "RGCNCongestion": ["in_channels", "out_channels", "hidden_channels", "dropout"],
         "SwinTransformerCongestion": [
@@ -51,10 +41,26 @@ def build_model(opt):
             "use_checkpoint",
             "img_size",
         ],
-        "Congestion_Prediction_Net": ["in_channels", "out_channels"],
-        "DRC_Prediction_Net": ["in_channels", "out_channels"],
-        # 添加BRAU-Net++模型的参数支持
-        "BRAUNet_Congestion": ["in_channels", "out_channels", "img_size", "n_win"],
+        "SwinUNetCongestion": [
+            "in_channels",
+            "out_channels",
+            "img_size",
+            "patch_size",
+            "embed_dim",
+            "depths",
+            "num_heads",
+            "window_size",
+            "mlp_ratio",
+            "qkv_bias",
+            "qk_scale",
+            "drop_rate",
+            "attn_drop_rate",
+            "drop_path_rate",
+            "ape",
+            "patch_norm",
+            "use_checkpoint",
+        ],
+        "Congestion_Prediction_Net": ["in_channels", "out_channels"]
     }
 
     # 参数过滤逻辑
@@ -68,13 +74,12 @@ def build_model(opt):
         "Congestion_Prediction_Net": "ibUNet (Inception Boosted U-Net)",
         "GPDL": "GPDL",
         "GCNCongestion": "GCN",
-        "EGEUNetCongestion": "EGE-UNet",
         "GraphSAGECongestion": "GraphSAGE",
         "RGCNCongestion": "RGCN",
         "RouteNet": "RouteNet",
         "SwinTransformerCongestion": "Swin Transformer",
+        "SwinUNetCongestion": "SwinUNet",
         "VMUNet": "VM-UNet",
-        "BRAUNet_Congestion": "BRAU-Net++",
         "GATCongestion": "GAT"
     }
 
