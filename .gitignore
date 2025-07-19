@@ -70,3 +70,8 @@ Thumbs.db
 dist/
 build/
 *.egg-info/
+
+# 外部项目目录 (独立的git仓库)
+BRAU-Netplusplus/
+ibUNet/
+EGE-UNet/
