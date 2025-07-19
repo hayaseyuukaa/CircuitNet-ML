@@ -1,4 +1,4 @@
-# CircuitNet: Deep Learning for Circuit Design
+# CircuitNet: Deep Learning for Circuit Design Congestion Prediction
 
 🚀 **先进的深度学习模型用于电路设计中的拥塞预测**
 
