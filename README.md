@@ -2,6 +2,12 @@
 
 🚀 **先进的深度学习模型用于电路设计中的拥塞预测**
 
+[![GitHub Stars](https://img.shields.io/github/stars/hayaseyuukaa/CircuitNet-ML)](https://github.com/hayaseyuukaa/CircuitNet-ML)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
+
+> **项目状态**: 🔥 积极开发中 | **最后更新**: 2024年7月
+
 ## 📖 项目简介
 
 CircuitNet是一个专注于电路设计领域的深度学习项目，主要解决芯片设计中的拥塞预测问题。项目集成了多种先进的神经网络架构，包括图神经网络、U-Net变体、Transformer等模型。
