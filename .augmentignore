@@ -1,0 +1,59 @@
+# 排除所有大型数据目录
+graph_features/
+ISPD2015/
+work_dir/
+cache/
+results*/
+routability_ir_drop_prediction/
+feature_extraction/data/
+
+# 排除缓存和临时文件
+**/__pycache__/**
+**/.git/**
+**/cache/**
+**/results*/**
+
+# 排除所有数据文件格式
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pth
+*.pt
+*.ckpt
+*.model
+*.log
+*.tmp
+*.temp
+
+# 排除电路设计文件
+*.def
+*.def.gz
+*.lef
+*.lib
+*.v
+*.verilog
+
+# 排除图片和文档（除了README）
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.doc
+*.docx
+
+# 只保留核心代码文件
+# 允许的文件类型：
+# *.py
+# *.md
+# *.txt
+# *.yml
+# *.yaml
+# *.json
+# *.sh
